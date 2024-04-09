@@ -6,7 +6,7 @@ before_install:
   - docker pull openjdk:20-jdk
 
 script:
-  - ./mvnw clean install
+  - ./mvnw install
   - ./mvnw deploy jib:build -P deploy-docker
 
 before_script:
