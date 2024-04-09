@@ -3,7 +3,7 @@ env:
   - DOCKER_PASSWORD = "9?+bKsn$^rVLQ&r"
 before_install:
   - echo "9?+bKsn$^rVLQ&r" | docker login -u "hanguyenanhson455" --password-stdin
-  - docker pull openjdk:17-jre-slim-sid
+  - docker pull mediasol/openjdk17-slim-jprofiler
 
 script:
   - ./mvnw clean install
