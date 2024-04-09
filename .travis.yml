@@ -3,3 +3,5 @@ jdk:
   - openjdk11
 script:
   - ./mvnw install
+before_install:
+  - chmod +x mvnw
